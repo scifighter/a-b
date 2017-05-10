@@ -1,21 +1,24 @@
 <html>
   <head>
       <meta charset = "utf-8">
-      <script LANGUAGE="JavaScript">
-          var a = prompt("Введите A: ","");
-          var b = prompt("Введите B: ", "");
-          b = parseFloat(b);
-          a = parseFloat(a);
-          function isIntegeer(g) {
-            return (g ^ 0) === g;
-          }
-          if (isIntegeer(a) && isIntegeer(b)) {
-            var c = Number(a) + Number(b);
-          } else {
-            var c = "Ошибка ввода";
-          }
-      </script>
+      <title>Сложение</title>
+  </head>
+  <body>
+    <script LANGUAGE="JavaScript">
+        var a = prompt("Введите A: ","");
+        var b = prompt("Введите B: ", "");
+        b = parseFloat(b);
+        a = parseFloat(a);
+        function isIntegeer(g) {
+          return (math.floor(g) ^ 0) === g;
+        }
+        if (isIntegeer(a) && isIntegeer(b)) {
+          var c = Number(a) + Number(b);
+        } else {
+          var c = "Ошибка ввода";
+        }
+    </script>
     <input type ="button" onclick= "alert(c)" value = "Сложить A и B">
     <input type="button" value="Ввести числа" onClick="document.location.reload(true)">
-  </head>
+  </body>
 </html>
