@@ -1,26 +1,46 @@
-<html>
-  <head>
-      <meta charset = "utf-8">
-      <title>Сложение</title>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="/style.css" rel="stylesheet">
   </head>
   <body>
-    <script LANGUAGE="JavaScript">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><span class="glyphicon glyphicon-bookmark"></span> Сложение</h1>
+				<h3>Сложение. программа складывает два целых числа и выдаёт результат</h3>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 block">
+				<div class="jumbotron">
+				  <p><a onclick="document.location.reload(true)" class="btn btn-primary btn-lg" role="button">Ввести числа</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
         var a = prompt("Введите A: ","");
         var b = prompt("Введите B: ", "");
         function isIntegeer(num) {
-          if (Math.floor(num) == num) {
-            return num;
-          } else {
-            return false;
-          }
+          return Math.floor(num) == num;
         }
         if (isIntegeer(a) && isIntegeer(b)) {
           var c = Number(a) + Number(b);
+          alert(c);
         } else {
           var c = "Ошибка ввода";
         }
     </script>
-    <input type ="button" onclick= "alert(c)" value = "Сложить A и B">
-    <input type="button" value="Ввести числа" onClick="document.location.reload(true)">
-  </body>
+</body>
 </html>
