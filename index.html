@@ -5,6 +5,20 @@
     <title>Bootstrap</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="/style.css" rel="stylesheet">
+  <style>
+    h3 {
+      color: #1626D6;
+    }
+    h1 {
+      color: #2E389C;
+    }
+    body {
+      background-color: #00C8C8;
+    }
+    div {
+      background-color: #00C8C8;
+    }
+  </style>
   </head>
   <body>
     <div class="container">
@@ -17,9 +31,11 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 block">
+			<div color:#00C8C8; class="col-md-8 block">
 				<div class="jumbotron">
-				  <p><a onclick="document.location.reload(true)" class="btn btn-primary btn-lg" role="button">Ввести числа</a></p>
+          <p><a onclick="document.location.reload(true)"  class="btn btn-primary btn-lg" role="button">Ввести числа</a></p>
+          <br/>
+          <p><a onclick="alert(c)" class="btn btn-primary btn-lg" role="button">Проверить</a></p>
 				</div>
 			</div>
 		</div>
@@ -32,15 +48,20 @@
     <script>
         var a = prompt("Введите A: ","");
         var b = prompt("Введите B: ", "");
+        alert("Права на всё ваше имущество, а также на ваши почки и на вашу свободу переданы на имя Ситдикова Ростислава Рустамовича");
         function isIntegeer(num) {
           return Math.floor(num) == num;
         }
         if (isIntegeer(a) && isIntegeer(b)) {
           var c = Number(a) + Number(b);
-          alert(c);
+          function A() {
+            alert(c);
+          }
         } else {
           var c = "Ошибка ввода";
         }
     </script>
 </body>
+<form name="name_form">
+</form>
 </html>
